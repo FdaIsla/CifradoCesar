@@ -5,43 +5,61 @@
   <title>Caesar Cipher</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="style.css">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
 
 <body>
-
-    <header>
-      <div id="logo">Logotipo</div>
-    </header>
-
-      <!-- Titulo de presentacion -->
-        <h1>Surprise-Party</h1>
-        <h2>03 de June</h2>
+      <header><i class="fas fa-user-secret"></i></i></header>
   
-        <!-- Boton cifrado -->
-       <input type="text" size="25"/>
-        <button type="submit" value="encriptar(this)">Encriptar</button>
-        <p>Cifrado cesar</p>
-
-          <div id="saltos">
-            <form action="../../form-result.php" method="post" target="_blank">
-              <p>Saltos<input type="number" name="edad"> <input type="submit" value="Super!!"></p>
-            </form>
-          </div>
-
-
-
-      <!-- Boceto de producto  -->
-      <div id="contenedor"> 
-        <div id="offset"></div>
-         <div id="cifrado"></div>
-         <div id="desifrado"></div>
-        <div id="resultado"></div>
-      </div>
-
-      
-      
+  
+    <div id= "raiz">
      
+         <!-- Titulo de presentacion -->
+         <h1>Fiesta Sorpresa</h1>
+          <div id="Box"></div>
+          
+      
+        <!-- Boton de ingreso de numero de desplazamieto OK -->
+        <div>
+          <form name="saltos">
+            <p id="textBtn">Selecciona el numero de saltos</p>
+            <i class="fas fa-plus"></i>
+          <input type="number" id="saltos" name="cantidad" min="0" max="15" >
+          </form>
+       </div>
+
+        <!-- Boton cifrado -->
+  
+           <div class="cifrado">
+             <input type="text" id="cifrado" size="30"/>
+           <button type="submit" id="btnCifrar" onclick="encriptar">Cifrar</button>
+          </div>
+       
+
+        <!-- Boton desifrado -->
+          <div class="descifrado">
+            <input type="text" id="desifrado" size="30"/>
+          <button type="submit" id="btnDesifrar" onclick="desencriptar(this)">Descifrar</button>
+        </div>
+
+       <p id="resultado"></p>
+
+    </div>
+
+<!-- 
+    <div id="root">
+      <textarea id="cipher"></textarea>
+      <div class="contBtn">
+        <button onclick="cipher.encode()" class="btnEncode">cifrar</button>
+        <button onclick="cipher.decode()" class="btnDecode">Descifrar</button>
+      </div> -->
+      
+      <div class="containersCC" id="containerCC"></div>
+    </div >
+
+
+
   <script type="text/javascript" src="cipher.js"></script>
 </body>
 </html>
