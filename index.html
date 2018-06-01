@@ -13,53 +13,36 @@
       <header><i class="fas fa-user-secret"></i></i></header>
   
   
-    <div id= "raiz">
+    <div id="root">
      
-         <!-- Titulo de presentacion -->
-         <h1>Fiesta Sorpresa</h1>
-          <div id="Box"></div>
+        <!-- Titulo de presentacion -->
+          <h1>Fiesta Sorpresa</h1>
+            <div id="Box"></div>
           
       
         <!-- Boton de ingreso de numero de desplazamieto OK -->
-        <div>
+        
           <form name="saltos">
             <p id="textBtn">Selecciona el numero de saltos</p>
-            <i class="fas fa-plus"></i>
-          <input type="number" id="saltos" name="cantidad" min="0" max="15" >
+             <i class="fas fa-plus"></i>
+            <input type="number" id="saltos" name="cantidad" min="0" max="15" >
           </form>
-       </div>
-
-        <!-- Boton cifrado -->
-  
-           <div class="cifrado">
-             <input type="text" id="cifrado" size="30"/>
-           <button type="submit" id="btnCifrar" onclick="encriptar">Cifrar</button>
-          </div>
        
 
-        <!-- Boton desifrado -->
-          <div class="descifrado">
-            <input type="text" id="desifrado" size="30"/>
-          <button type="submit" id="btnDesifrar" onclick="desencriptar(this)">Descifrar</button>
-        </div>
+         <!-- Boton/caja de texto cifrado -->
+  
+          
+             <input type="text" id="cifrado" size="30"/>
+             <button type="submit" id="btnCifrar" onclick="encriptar">Cifrar</button>
+             
+             <input type="text" id="descifrado" size="30"/>
+             <button type="submit" id="btnDesifrar" onclick="desencriptar">Descifrar</button>
+          
 
        <p id="resultado"></p>
 
-    </div>
-
-<!-- 
-    <div id="root">
-      <textarea id="cipher"></textarea>
-      <div class="contBtn">
-        <button onclick="cipher.encode()" class="btnEncode">cifrar</button>
-        <button onclick="cipher.decode()" class="btnDecode">Descifrar</button>
-      </div> -->
-      
-      <div class="containersCC" id="containerCC"></div>
-    </div >
-
-
-
   <script type="text/javascript" src="cipher.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+
 </body>
 </html>
