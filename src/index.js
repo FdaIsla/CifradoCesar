@@ -1,16 +1,14 @@
 window.actions = {
-    execute: ()=> {
-    let saltos = document.getElementById("number").value;
-    let textReturn = document.getElementById("cifrado").value;
+    // execute: ()=> {
+    let saltos = document.getElementById("saltos");
+    // let botonCifrar = document.getElementById("btnCifrar").value;
+    let textbox = document.getElementById("cifrado");
       
-    if(saltos == true){
-        document.getElementById("cifrado").value = cipher.encode (textReturn,saltos);
-        
-    } else {
-        alert("usted no a llenado el campo");
-    }
+    document.getElementById("btnCifrar").addEventListener(click, function() {
+        document.getElementById("cifrado").innerHTML=window.cipher(string.value, parseInt(saltos.value));
+
+    };
     
-
-
-}
+ 
+ 
 }
