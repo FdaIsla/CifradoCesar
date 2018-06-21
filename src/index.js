@@ -1,6 +1,7 @@
 
 // texto
 let string = document.getElementById("cifrado");
+let resultado = document.getElementById("resultado");
 // para obtener el offset numero
 let offset = document.getElementById("saltos");
 

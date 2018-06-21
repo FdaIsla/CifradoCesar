@@ -19,13 +19,13 @@ window.cipher = {
     
           },
     
-    decode : (string,offset) => {
+    decode : (resultado,offset) => {
       let descrifradas= "";
      
-          for (let x = 0; x <string.length; x++) {
-          let formula = (string.toUpperCase().charCodeAt(x) + 65 - offset) % 26 + 65;
+          for (let x = 0; x <resultado.length; x++) {
+          let formula = (resultado.toUpperCase().charCodeAt(x) + 65 - offset) % 26 + 65;
         
-          if (string.charCodeAt(x) === 26) {
+          if (resultado.charCodeAt(x) === 26) {
           formula = ' ';// contiene los espacios
           cifradas+= " ";// pone en la frase los espacios
          
@@ -36,7 +36,7 @@ window.cipher = {
 
           }
           return descrifradas;
-  
+     
 
 }
 }
