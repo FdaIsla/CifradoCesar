@@ -22,14 +22,14 @@ window.cipher = {
       let decifrados= "";
      
      for(let i = 0; i < string.length; i++) {
-       let formula = (string.toUpperCase().charCodeAt(i) - 65 - offset) % 26 + 65;
+       let formula = (string.toUpperCase().charCodeAt(i) + 65 - offset) % 26 + 65;
        if (string.charCodeAt(i) === 32) {
          formula = ' ';// contiene los espacios
          decifrados+= " ";// pone en la frase los espacios
         
        }
-       const decifrar = String.fromCharCode(formula);
-       decifrados+= descifrado;
+       const desencriptar = String.fromCharCode(formula);
+       decifrados+= desencriptar;
      }
      return decifrados;
   
