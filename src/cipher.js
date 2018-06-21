@@ -1,37 +1,41 @@
 
 window.cipher = {
 
-   encode : (string, offset) => {
+   encode : (string,offset) => {
     let cifradas= "";
    
-   for(let i = 0; i < string.length; i++) {
-     let formula = (string.toUpperCase().charCodeAt(i) - 65 + offset) % 26 + 65;
-     if (string.charCodeAt(i) === 32) {
-       formula = ' ';// contiene los espacios
-       cifradas+= " ";// pone en la frase los espacios
-       
-     }
-     const cifrado = String.fromCharCode(formula);
-     cifradas+= cifrado;
-   }
-   return cifradas;
-    
-    },
-    
-    decode : (string, offset) => {
-      let decifrados= "";
+          for (let i = 0; i <string.length; i++) {
+          let formula = (string.toUpperCase().charCodeAt(i) - 65 + offset) % 26 + 65;
      
-     for(let i = 0; i < string.length; i++) {
-       let formula = (string.toUpperCase().charCodeAt(i) + 65 - offset) % 26 + 65;
-       if (string.charCodeAt(i) === 32) {
-         formula = ' ';// contiene los espacios
-         decifrados+= " ";// pone en la frase los espacios
+          if (string.charCodeAt(i) === 26) {
+          formula = ' ';
+          cifradas+= " ";
+          
+          }
+          const cifrado = String.fromCharCode(formula);
+          cifradas+= cifrado;
+          }
+          return cifradas;
+    
+          },
+    
+    decode : (string,offset) => {
+      let descrifradas= "";
+     
+          for (let x = 0; x <string.length; x++) {
+          let formula = (string.toUpperCase().charCodeAt(x) + 65 - offset) % 26 + 65;
         
-       }
-       const desencriptar = String.fromCharCode(formula);
-       decifrados+= desencriptar;
-     }
-     return decifrados;
+          if (string.charCodeAt(x) === 26) {
+          formula = ' ';// contiene los espacios
+          cifradas+= " ";// pone en la frase los espacios
+         
+          }
+          const decifrado = String.fromCharCode(formula);
+          descrifradas+= decifrado;
+          
+
+          }
+          return descrifradas;
   
 
 }

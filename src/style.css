@@ -1,15 +1,14 @@
-*{
-   margin: 0;
-   padding: 0; 
-   
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
-    
+    width: 100%;
     background-color:#434040ee;
 }
 /*logo*/
-.fa-user-secret {
+.fa-gift {
     font-size: 80px;
     margin-top: 3%;
     margin-left:5%;
@@ -18,12 +17,11 @@ body {
    
 }
 
-#Box {
+.Box {
     width:100%;
-    height: 10px;
+    height: 25px;
     background-color:hsl(56, 100%, 61%);
-    padding: 1em;
-   
+    
 }
 
 
@@ -56,7 +54,7 @@ body h1 {
     width: 100px;
     border-radius: 30px;
     text-align: center;
-    border: 1px solid hsl(56, 100%, 61%);
+    border: 5px solid hsl(56, 100%, 61%);
     padding:10px 10px 10px 10px;
     margin-left:5px; 
     margin-bottom: 5px;
@@ -79,12 +77,13 @@ body h1 {
 
 #cifrado {
     width: 40%;
+    height: 50px;
     font-family: arial;
     font-size: 30px;
     text-align: center;
-    border: 2px solid hsl(56, 100%, 61%);
+    border: 10px solid hsl(56, 100%, 61%);
     border-radius: 40px;
-    padding:10px 10px 70px 40px;
+    padding:1em;
     position: relative;
     margin-left:30%; 
     margin-right:30%; 
@@ -100,56 +99,43 @@ body h1 {
     width: 150px;
     height: 40px;
     font-size: 20px;
-    border: 1px solid #ffd933;
+    border: 3px solid #8fbb88;
     border-radius: 30px;
-    margin-left:47%;
-    margin-top: 10px;
+    position: absolute;
+    left: 10%;
     color:#fcf3ca;
-    background-color: #f1c550;
+    background-color: rgb(7, 187, 22);
 
 }
 
-#descifrado {
-    width: 40%;
-    font-family: arial;
-    font-size: 30px;
-    text-align: center;
-    bottom: 100px;
-    border: 2px solid hsl(56, 100%, 61%);
-    border-radius: 40px;
-    padding:10px 10px 60px 40px;
-    position: relative;
-    top: 80px;
-    margin-left:30%; 
-    margin-right:30%; 
-    margin-bottom: 100px;
-    background-color: #fcf3ca;
-    color:#d223a0;
-}
 
 #btnDesifrar {
     width: 130px;
     height: 40px;
-    margin-left:47%; 
     font-size: 20px;
-    border: 1px solid hsl(56, 100%, 61%);
-    margin-bottom: 150px;
+    border: 3px solid #d14f4f;
+    position: absolute;
+    right: 5%;
     border-radius: 30px;
     color:#fcf3ca;
-    background-color: #f1c550;
+    background-color: #ce2323;
 }
 
 #resultado {
-    width: 100%;
-    height: 50px;;
+    width: 40%;
+    height: 60px;;
     padding: 1em;
     background-color: #d223a0;
+    border-radius: 30px;
     border: 10px solid #f1c550;
-    font-size: 50px ;
+    font-size: 30px ;
     color: #fcf3ca;
     font-family: arial;
     text-align: center;
-    border-left: 15px;
+    position: relative;
+    left: 30%;
+    right: 30%;
+    top: 30px;
     
 }
 
