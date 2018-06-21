@@ -1,9 +1,11 @@
 *{
    margin: 0;
    padding: 0; 
+   
 }
 
 body {
+    
     background-color:#434040ee;
 }
 /*logo*/
@@ -18,24 +20,24 @@ body {
 
 #Box {
     width:100%;
-    height: 20px;
+    height: 10px;
     background-color:hsl(56, 100%, 61%);
-    position: relative;
-    margin-bottom: 10px;
+    padding: 1em;
+   
 }
 
 
 body h1 {
     width:100%;
     font-family: 'Lobster', cursive;
-    font-size: 90px;
+    font-size: 70px;
     text-align: center;
     color: #fcf3ca;
     font-weight: bold;
-    padding:10px 10px 10px 10px;
+    padding:1em;
     background-color:  hsl(317, 55%, 56%);
     font-weight: normal;
-
+    
 }
 
 #textBtn {
@@ -136,3 +138,18 @@ body h1 {
     color:#fcf3ca;
     background-color: #f1c550;
 }
+
+#resultado {
+    width: 100%;
+    height: 50px;;
+    padding: 1em;
+    background-color: #d223a0;
+    border: 10px solid #f1c550;
+    font-size: 50px ;
+    color: #fcf3ca;
+    font-family: arial;
+    text-align: center;
+    border-left: 15px;
+    
+}
+

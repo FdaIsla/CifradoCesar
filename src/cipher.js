@@ -1,27 +1,38 @@
 
 window.cipher = {
 
-   encode : (textbox, saltos) => {
-    let corriendo;
-    let resultado = " ";
-    for ( corriendo = 0; i < textbox.lenhth; corriendo++){
-      let x =textbox.toUpperCase().charCodeAt(corriendo);
-      let resultadoFormula = ( x - 65 + saltos) % 26 + 65;
-      resultado += String.fromCharCode(resultadoFormula);
-    }
-    return resultado;
+   encode : (string, offset) => {
+    let cifradas= "";
+   
+   for(let i = 0; i < string.length; i++) {
+     let formula = (string.toUpperCase().charCodeAt(i) - 65 + offset) % 26 + 65;
+     if (string.charCodeAt(i) === 32) {
+       formula = ' ';// contiene los espacios
+       cifradas+= " ";// pone en la frase los espacios
+       
+     }
+     const cifrado = String.fromCharCode(formula);
+     cifradas+= cifrado;
+   }
+   return cifradas;
+    
     },
     
-  //   decode : (textbox, saltos) => {
-  //     let corriendo;
-  //     let resultado = " ";
-  //     for ( corriendo = 0; i < textReturn.lenhth; corriendo++){
-  //       let x =textReturn.toUpperCase().charCodeAt(corriendo);
-  //       let resultadoFormula = ( x - 65 - saltos) % 26 + 65;
-  //       resultado += String.fromCharCode(resultadoFormula);
-  //     }
-  //     return resultado;
-  // }
-  // alert("Estamos en construcción");
+    decode : (string, offset) => {
+      let decifrados= "";
+     
+     for(let i = 0; i < string.length; i++) {
+       let formula = (string.toUpperCase().charCodeAt(i) - 65 - offset) % 26 + 65;
+       if (string.charCodeAt(i) === 32) {
+         formula = ' ';// contiene los espacios
+         decifrados+= " ";// pone en la frase los espacios
+        
+       }
+       const decifrar = String.fromCharCode(formula);
+       decifrados+= descifrado;
+     }
+     return decifrados;
+  
 
+}
 }

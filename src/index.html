@@ -12,31 +12,26 @@
 <body>
       <header><i class="fas fa-user-secret"></i></i></header>
   
-  
-    <div id="root">
-     
-        <!-- Titulo de presentacion -->
-          <h1>Fiesta Sorpresa</h1>
-            <div id="Box"></div>
+   <!-- Titulo de presentacion -->
+    <div id="root"><h1>Fiesta Sorpresa</h1><div id="Box"></div>
           
-      
-        <!-- Boton de ingreso de numero de desplazamieto OK -->
-          <form name="saltos">
+   <!-- Boton de ingreso de numero de desplazamieto OK -->
+          
             <p id="textBtn">Selecciona el numero de saltos</p>
              <i class="fas fa-plus"></i>
             <input type="number" id="saltos" name="cantidad" min="0" max="15" >
-          </form>
-       
-
-         <!-- Boton/Caja de texto cifrado -->
+          
+   <!-- Boton/Caja de texto cifrado -->
+            
              <input type="text" id="cifrado" value="" size="30"/>
-             <button type="button" id="btnCifrar" onclick="window.actions.execute()">Cifrar</button>
+             <button type="button" id="btnCifrar" onclick="cifrar()">Cifrar</button>
              
              <input type="text" id="descifrado" size="30"/>
-             <button type="submit" id="btnDesifrar" onclick="desencriptar">Descifrar</button>
+             <button type="submit" id="btnDesifrar" onclick="desencriptar()">Descifrar</button>
           
 
-       <p id="resultado"></p>
+             <div><p id="resultado"></p></div>
+            
 
   <script type="text/javascript" src="cipher.js"></script>
   <script type="text/javascript" src="index.js"></script>
