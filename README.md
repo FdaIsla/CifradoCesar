@@ -8,7 +8,7 @@ pero es un poco complicado... porque el es muy curioso y solia no gustar de las 
 
 Por eso que me las ingenié 🤔 para crear esta entretenida app usando el sistema del cifrado cesar, será el complice perfecto para nosotros en esta gran misión💗👩‍❤‍💋‍👨.
 
-Nota: Ajunto imagen de instruccione y os invito a probarla.
+Nota: Ajunto imagen de instrucciones y os invito a probarla.
 
 Saludos!!
 
